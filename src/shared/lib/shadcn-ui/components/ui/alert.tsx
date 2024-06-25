@@ -1,7 +1,7 @@
 import * as React from "react";
 import { cva, type VariantProps } from "class-variance-authority";
 
-import { cn } from "../utils";
+import { cn } from "../../lib/utils";
 
 const alertVariants = cva(
   "norelative now-full norounded-lg noborder noborder-slate-200 nop-4 [&>svg~*]:nopl-7 [&>svg+div]:notranslate-y-[-3px] [&>svg]:noabsolute [&>svg]:noleft-4 [&>svg]:notop-4 [&>svg]:notext-slate-950 dark:noborder-slate-800 dark:[&>svg]:notext-slate-50",

@@ -1,7 +1,20 @@
 import "./App.css";
-import { Button } from "./@/components/ui/index";
+import {
+  Button,
+  Alert,
+  AlertDescription,
+  AlertTitle,
+  Calendar,
+  Carousel,
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+  Badge,
+  Card,
+  Checkbox,
+} from "@/shared/lib/shadcn-ui/components/ui";
 import { useState } from "react";
-import { Alert, AlertDescription, AlertTitle } from "./@/components/ui/alert";
 
 function App() {
   const [showAlert, setShowAlert] = useState<boolean>(false);
@@ -22,6 +35,18 @@ function App() {
           <AlertDescription>This is a destructive alert!</AlertDescription>
         </Alert>
       )}
+      <Calendar />
+      <Accordion type="single" collapsible>
+        <AccordionItem value="item-1">
+          <AccordionTrigger>Is it accessible?</AccordionTrigger>
+          <AccordionContent>
+            Yes. It adheres to the WAI-ARIA design pattern.
+          </AccordionContent>
+        </AccordionItem>
+      </Accordion>
+      <Badge variant="secondary">Secondary</Badge>
+      <Card>카드</Card>
+      <Checkbox>ffd</Checkbox>
     </div>
   );
 }
